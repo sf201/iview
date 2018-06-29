@@ -19,7 +19,7 @@
             @keydown.up.prevent="handleKeydown"
             @keydown.down.prevent="handleKeydown"
             @keydown.tab="handleKeydown"
-            @keydown.delete="handleKeydown"
+            <!--@keydown.delete="handleKeydown"-->
 
 
             @mouseenter="hasMouseHoverHead = true"
@@ -529,9 +529,9 @@
                 this.values = [];
             },
             handleKeydown (e) {
-                if (e.key === 'Backspace'){
-                    return; // so we don't call preventDefault
-                }
+//                if (e.key === 'Backspace'){
+//                    return; // so we don't call preventDefault
+//                }
 
                 if (this.visible) {
                     e.preventDefault();
